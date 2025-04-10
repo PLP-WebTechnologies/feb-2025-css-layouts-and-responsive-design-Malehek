@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.column {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .column {
+        background-color: #f8d7da; /* Light red */
+        color: #721c24; /* Dark red text */
+    }
+}
+
+/* Tablet Styles (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .column {
+        background-color: #d4edda; /* Light green */
+        color: #155724; /* Dark green text */
+    }
+}
+
+/* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .column {
+        background-color: #d1ecf1; /* Light blue */
+        color: #0c5460; /* Dark blue text */
+    }
+}
